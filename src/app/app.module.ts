@@ -8,6 +8,7 @@ import { AnimalsComponent } from './animals/animals.component';
 import { AnimalDetailComponent } from './animal-detail/animal-detail.component';
 import { EducationComponent } from './education/education.component';
 import { EmploymentComponent } from './employment/employment.component';
+import { EmploymetDetailComponent } from './employmet-detail/employmet-detail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { EmploymentComponent } from './employment/employment.component';
     AnimalsComponent,
     AnimalDetailComponent,
     EducationComponent,
-    EmploymentComponent
+    EmploymentComponent,
+    EmploymetDetailComponent
   ],
   imports: [
     BrowserModule,
