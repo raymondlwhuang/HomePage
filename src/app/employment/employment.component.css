@@ -1,0 +1,46 @@
+.what-i-did {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+@media all and (min-width: 600px) {
+    .employment-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .employment-inner-box{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 900px;
+        margin: 20px;
+    }
+}
+.company{
+    color:#3377CC;
+}
+.period{
+    color:#5E9516;
+}
+.location{
+    color:#505576;
+}
+.detail{
+    color:#50555c;
+}
+.employment-left {
+    flex-basis: 300px;
+}
+.employment-left img {
+    width: 100%;
+}
+.employment-right {
+    flex: 1;
+    flex-basis: 500px;
+    padding-left: 20px;
+}
