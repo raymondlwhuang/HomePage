@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Element } from '@angular/compiler';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +6,7 @@ import { Element } from '@angular/compiler';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  private myIndex = 0;
+  //private myIndex = 0;
 
   constructor() { }
 

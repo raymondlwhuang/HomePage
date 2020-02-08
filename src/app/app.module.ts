@@ -4,25 +4,27 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { AnimalsComponent } from './animals/animals.component';
-import { AnimalDetailComponent } from './animal-detail/animal-detail.component';
 import { EducationComponent } from './education/education.component';
 import { EmploymentComponent } from './employment/employment.component';
 import { EmploymetDetailComponent } from './employmet-detail/employmet-detail.component';
+import { DeferLoadModule } from '@trademe/ng-defer-load';
+import { ArtComponent } from './art/art.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AnimalsComponent,
-    AnimalDetailComponent,
     EducationComponent,
     EmploymentComponent,
-    EmploymetDetailComponent
+    EmploymetDetailComponent,
+    ArtComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DeferLoadModule
   ],
   providers: [],
   bootstrap: [AppComponent]
