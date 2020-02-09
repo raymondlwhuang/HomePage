@@ -1,4 +1,8 @@
+.img-container {
+    position: relative;
+}
 .jump{
+    display: block;
     position: absolute;
     top:20px;
     left:50%;
@@ -19,14 +23,22 @@
 .summary li {
     display: block;
 }
+.desc {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:#3578CC;
+    min-width: 250px;
+}
+.img-container {
+    margin-top: 30px;
+}
+img{
+    width:100%;
+}
+
 @media all and (min-width: 600px) {
-    .desc {
-        position:absolute;
-        top:50%;left:50%;
-        transform: translate(-50%, -50%);
-        color:#3578CC;
-    
-    }
     .i-am {
         font-size: 35px;
         font-style: italic;
@@ -38,17 +50,16 @@
     }
 }
 @media all and (max-width: 599px) {
+    .jump{
+        display: none;
+    }
+    .summary {
+         padding-top: 0px;
+    }    
     .summary-container {
         margin: 20px;
     }    
 
-    .desc {
-        position:absolute;
-        top:50%;left:50%;
-        transform: translate(-50%, -50%);
-        color:#3578CC;
-    
-    }
     .i-am {
         font-size: 15px;
         font-style: italic;
@@ -60,9 +71,3 @@
     } 
 }
 
-.img-container {
-    margin-top: 30px;
-}
-img{
-    width:100%;
-}
