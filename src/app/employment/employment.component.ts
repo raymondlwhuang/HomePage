@@ -16,7 +16,7 @@ export class EmploymentComponent implements OnInit {
       slides.css('display','none');
       slideIndex = slideIndex >= slides.length ? 1 : slideIndex + 1;
       $(slides[slideIndex-1]).fadeIn('slow');
-      setTimeout(showSlides, 5000);
+      setTimeout(showSlides, 10000);
     })()
  
   }
