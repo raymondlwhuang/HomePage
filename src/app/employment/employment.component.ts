@@ -11,12 +11,15 @@ export class EmploymentComponent implements OnInit {
   ngOnInit() {
     let slideIndex = 0;
     
-    (function showSlides() {
+    (function showSlides() {      
+      $('.initail').addClass('mySlides').removeClass('initail');
       let slides = $(".mySlides");
       slides.css('display','none');
       slideIndex = slideIndex >= slides.length ? 1 : slideIndex + 1;
       $(slides[slideIndex-1]).fadeIn('slow');
+      $('.initail').css('display','none');
       setTimeout(showSlides, 10000);
+    
     })()
  
   }
