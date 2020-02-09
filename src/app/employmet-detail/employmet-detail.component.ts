@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./employmet-detail.component.css']
 })
 export class EmploymetDetailComponent implements OnInit {
-  test = "this is testing";
-  private employments = [
+  employments = [
     {
       company:'Asigra Ltd.',
       imgUrl: '../../assets/images/asigra.PNG',
