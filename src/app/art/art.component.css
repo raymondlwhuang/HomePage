@@ -21,5 +21,8 @@ img{
 @media all and (max-width: 599px) {
     .img-container {
         display: block;
-    }    
+    }
+    .img-container .images img{
+        width: 100%;
+    }        
 }
