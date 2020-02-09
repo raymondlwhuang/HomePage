@@ -25,3 +25,9 @@ nav li a{
 nav li a:hover{
     color: #3578CC;
 }
+.source{
+    position: absolute;
+    right: 10px;
+    color: #18A05E;
+    font-weight: bold;
+}

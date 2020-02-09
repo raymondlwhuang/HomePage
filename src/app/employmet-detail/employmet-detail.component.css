@@ -54,3 +54,6 @@ p{
 .line {
     text-align: center;
 }
+img {
+    border-radius: 35px;
+}

@@ -3,7 +3,7 @@
     font-size: 20px;
 }
 .summary-container {
-    text-align: center;;
+    text-align: center;
 }
 .summary {
     display: inline-block;
@@ -33,6 +33,10 @@
     }
 }
 @media all and (max-width: 599px) {
+    .summary-container {
+        margin: 20px;
+    }    
+
     .desc {
         position:absolute;
         top:50%;left:50%;
