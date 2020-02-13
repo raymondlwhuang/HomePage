@@ -9,6 +9,8 @@ import { EmploymetDetailComponent } from './employmet-detail/employmet-detail.co
 import { DeferLoadModule } from '@trademe/ng-defer-load';
 import { ArtComponent } from './art/art.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { SkillsDemoComponent } from './skills-demo/skills-demo.component';
+import { JavascriptComponent } from './javascript/javascript.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     EmploymentComponent,
     EmploymetDetailComponent,
     ArtComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    SkillsDemoComponent,
+    JavascriptComponent
   ],
   imports: [
     BrowserModule,
