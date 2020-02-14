@@ -69,3 +69,12 @@ a {
 
 iframe {
   max-width: 100%; }
+.source-link {
+  background: lightgreen;
+  padding: 5px; 
+  margin: 5px; 
+  border: outset lightblue;
+}
+.source-link:hover {
+  text-decoration: none;
+}
