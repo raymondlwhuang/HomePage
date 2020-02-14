@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EducationComponent } from './education/education.component';
 import { EmploymentComponent } from './employment/employment.component';
-import { EmploymetDetailComponent } from './employmet-detail/employmet-detail.component';
+import { EmploymentDetailComponent } from './employment-detail/employment-detail.component';
 import { DeferLoadModule } from '@trademe/ng-defer-load';
 import { ArtComponent } from './art/art.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
@@ -17,7 +17,7 @@ import { JavascriptComponent } from './javascript/javascript.component';
     AppComponent,
     EducationComponent,
     EmploymentComponent,
-    EmploymetDetailComponent,
+    EmploymentDetailComponent,
     ArtComponent,
     PortfolioComponent,
     SkillsDemoComponent,
