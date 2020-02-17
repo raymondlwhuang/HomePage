@@ -17,7 +17,24 @@ nav ul {
 nav ul li {
     list-style: none;
     font-size: large;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
 }
+nav ul .submenu {
+    display: none;
+    position: absolute;
+    background-color: rgb(245, 30, 14);
+    width: 100%;
+    left: 0;
+    padding: 0;
+}
+nav ul .submenu li {
+    display: inline;
+    padding: 0 5px;
+    border: solid 1px yellow;
+}
+
 nav li a{
     padding: 5px;
     text-decoration: none;
@@ -37,5 +54,14 @@ nav li a:hover{
     color: #fff;
 }
 .router-container {
-    margin-top: 150px;
+    margin-top: 50px;
+}
+@media all and (max-width: 599px) {
+    .nav-container{
+        max-width: 300px;
+    }    
+    nav ul .submenu li {
+        display: block;
+        margin-right: 0;
+    }    
 }

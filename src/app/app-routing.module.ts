@@ -5,6 +5,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { EducationComponent } from './education/education.component';
 import { SkillsDemoComponent } from './skills-demo/skills-demo.component';
 import { JavascriptComponent } from './javascript/javascript.component';
+import { JqueryComponent } from './jquery/jquery.component';
+import { FrequentUsedjsComponent } from './frequent-usedjs/frequent-usedjs.component';
 
 
 const routes: Routes = [
@@ -16,9 +18,9 @@ const routes: Routes = [
     component: SkillsDemoComponent,
     children: [
       { path: '', component: JavascriptComponent },
-      { path: ':javaScript', component: JavascriptComponent },
-      { path: ':testing', component: EducationComponent },
-      { path: ':others', component: EducationComponent },
+      { path: 'javaScript:DOM', component: JavascriptComponent },
+      { path: 'javaScript:FREQUENTLY', component: FrequentUsedjsComponent },
+      { path: 'jQuery', component: JqueryComponent },
     ]
   }
 ];

@@ -10,6 +10,11 @@ export class SkillsDemoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $(function() {
+      $('#javaScript').on("click", function(){
+        $('#javaScript .submenu').toggle();
+      });
+    });    
   }
 
 }

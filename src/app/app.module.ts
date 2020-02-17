@@ -11,6 +11,12 @@ import { ArtComponent } from './art/art.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SkillsDemoComponent } from './skills-demo/skills-demo.component';
 import { JavascriptComponent } from './javascript/javascript.component';
+import { EmployeeService } from './employee.service';
+import { HttpClientModule } from '@angular/common/http';
+import { JqueryComponent } from './jquery/jquery.component';
+//import { FrequentUsedjsComponent } from './frequent-usedjs/frequent-usedjs.component';
+import { FrequentUsedjsModule } from './frequent-usedjs/frequent-usedjs.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,14 +27,20 @@ import { JavascriptComponent } from './javascript/javascript.component';
     ArtComponent,
     PortfolioComponent,
     SkillsDemoComponent,
-    JavascriptComponent
+    JavascriptComponent,
+    JqueryComponent,
+    //FrequentUsedjsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DeferLoadModule
+    DeferLoadModule,
+    HttpClientModule,
+    FrequentUsedjsModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
+  exports:[FrequentUsedjsModule],
+  providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

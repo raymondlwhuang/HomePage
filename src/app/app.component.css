@@ -38,3 +38,15 @@ nav li a:hover{
 .router-container {
     margin-top: 50px;
 }
+@media all and (max-width: 599px){
+    .nav-container{
+        max-width: 300px;
+    }    
+    nav ul li {
+        font-size: small;
+    }
+    .source{
+        position: relative;
+        right: 0;
+    }
+}

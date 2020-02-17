@@ -1,0 +1,23 @@
+.main{
+  padding: 0 10px;
+}
+#code-snip {
+  padding: 5px;
+  border: solid 1px red;
+  margin: 5px 0;  
+}
+table {
+    width: 100%;
+}
+table * {
+  vertical-align: middle;
+  padding: 0 5px;  
+}
+table th {
+  background-color: lightgray;
+}
+@media all and (max-width : 599px){
+  .main{
+    max-width: 300px;
+  }
+}

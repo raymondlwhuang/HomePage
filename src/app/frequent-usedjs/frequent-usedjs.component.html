@@ -1,0 +1,70 @@
+<div class="main">
+    <h3>My frequently used JavaScript method for object and array</h3>
+    <p>-- data (employees) listed in the table below are used for this demo</p>
+    <select  class="favorite" (change)="renderNewResult($event)">
+      <option value="">Make your selection</option>
+      <option value="forEach">forEach</option>
+      <option value="filter">filter</option>
+      <option value="sort">sort</option>
+      <option value="find">find</option>
+      <option value="pop">pop</option>
+      <!--option value="reduce">reduce</option-->
+      <option value="shift">shift</option>
+      <option value="slice">slice</option>
+  </select>      
+  <div id="code-snip">
+  </div>
+
+</div>        
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
+  
+      <!-- Position Column -->
+      <ng-container matColumnDef="index">
+        <th mat-header-cell *matHeaderCellDef> Index </th>
+        <td mat-cell *matCellDef="let element"> {{element.index}} </td>
+      </ng-container>
+  
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.name.first}} {{element.name.last}} </td>
+      </ng-container>
+  
+      <!-- Active Column -->
+      <ng-container matColumnDef="isActive">
+        <th mat-header-cell *matHeaderCellDef> Active </th>
+        <td mat-cell *matCellDef="let element"> {{element.isActive}} </td>
+      </ng-container>
+  
+      <!-- Age Column -->
+      <ng-container matColumnDef="age">
+        <th mat-header-cell *matHeaderCellDef> Age </th>
+        <td mat-cell *matCellDef="let element"> {{element.age}} </td>
+      </ng-container>
+      <!-- Company Column -->
+      <ng-container matColumnDef="company">
+        <th mat-header-cell *matHeaderCellDef> Company </th>
+        <td mat-cell *matCellDef="let element"> {{element.company}} </td>
+      </ng-container>
+      <!-- email Column -->
+      <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef> EMail </th>
+        <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+      </ng-container>
+      <!-- eye color Column -->
+      <ng-container matColumnDef="eyeColor">
+        <th mat-header-cell *matHeaderCellDef> Eye Color </th>
+        <td mat-cell *matCellDef="let element"> {{element.eyeColor}} </td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+  </div>
+  
+  <!-- Copyright 2019 Google LLC. All Rights Reserved.
+      Use of this source code is governed by an MIT-style license that
+      can be found in the LICENSE file at http://angular.io/license -->

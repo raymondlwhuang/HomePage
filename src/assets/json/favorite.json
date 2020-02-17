@@ -1,0 +1,34 @@
+[
+	{ 
+		"name": "", 
+		"snip": ""
+	},
+	{ 
+		"name": "forEach", 
+		"snip": "employees.forEach(employee=> employee.eyeColor=='green');"
+	},
+	{ 
+		"name": "filter", 
+		"snip": "employees.filter(employee => employee.eyeColor=='blue');"
+	},
+	{ 
+		"name": "sort", 
+		"snip": "employees.sort((employee,employee1) =>employee.age > employee1.age ? 1 : -1);"
+	},
+	{ 
+		"name": "find", 
+		"snip": "employees.find(employee => employee.age < 22);"
+	},
+	{ 
+		"name": "pop", 
+		"snip": "employees.pop();"
+	},
+	{ 
+		"name": "shift", 
+		"snip": "employees.shift();"
+	},
+	{ 
+		"name": "slice", 
+		"snip": "employees = employees.slice(1, 3);"
+	}
+]
