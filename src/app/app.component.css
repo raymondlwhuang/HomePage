@@ -39,8 +39,11 @@ nav li a:hover{
     margin-top: 50px;
 }
 @media all and (max-width: 599px){
-    .nav-container{
+    /* .nav-container{
         max-width: 300px;
+    }     */
+    nav ul {
+        justify-content: flex-start;
     }    
     nav ul li {
         font-size: small;
