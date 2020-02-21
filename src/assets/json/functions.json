@@ -1,0 +1,22 @@
+[	{
+	 "name": "", 
+	 "snip": [
+
+	  "<script type='text/javascript'>",
+	  "<!--",
+	  "  function drawSomeText(id) {",
+	  "  var pjs = Processing.getInstanceById(id);",
+	  "  var text = document.getElementById('inputtext').value;",
+	  "  pjs.drawText(text);}",
+	  "-->",
+	  "</script>"
+
+	 ],
+	 "output": [
+
+	  "<input type='text' id='inputtext'></input>",
+	  "<button onclick=drawSomeText('ExampleCanvas')></button>"
+
+	 ]
+	}
+]
