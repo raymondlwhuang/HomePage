@@ -33,29 +33,10 @@ export class FrequentUsedjsComponent implements OnInit {
       this.employees = data;
       this.demoOutput = data;
       this.dataSource = new MatTableDataSource(data);
-      //this.dataSource.sort = this.sort;
       this.dataSource.paginator = this.paginator;
 
     });
-    this._favorite.getFavorites().subscribe((data) => {
-      this.favorites = data;
-      const component = this;
-      $(function() {
-        $("select.favorite").change(function(){
-          let option = $(this).children("option:selected").val();
-          //component.renderNewResult(<string>option);
-          data.forEach((result) => {
-            if(option == result.name){
-              $('#code-snip').html(result.snip);
-              //component.renderNewResult(<string>option);
-            } 
-          });
-          
-        });
-  
-      });       
-  
-    }); 
+    this._favorite.getFavorites().subscribe(data => this.favorites = data); 
   }
   ngOnChanges() {
     this.changeDetectorRef.detectChanges();
@@ -100,10 +81,20 @@ export class FrequentUsedjsComponent implements OnInit {
     }    
     this.dataSource = new MatTableDataSource(this.demoOutput);
     this.dataSource.paginator = this.paginator;
-    // this.favorites.forEach((result) => {
-    //   if(option == result.name){
-    //     $('#code-snip').html(result.snip);
-    //   } 
-    // });
+    let snip = '';
+    if(option.target.value != '') {
+      $('#code-snip').addClass('add-border');
+      this.favorites.forEach((result) => {
+        if(option.target.value == result.name){
+          result.snip.forEach(element => {
+            snip += element + '</br>';
+          });
+        } 
+      });
+    }
+    else {
+      $('#code-snip').removeClass('add-border');
+    }
+    $('#code-snip').html(snip);
   } 
 }

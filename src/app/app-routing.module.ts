@@ -7,6 +7,7 @@ import { SkillsDemoComponent } from './skills-demo/skills-demo.component';
 import { JavascriptComponent } from './javascript/javascript.component';
 import { JqueryComponent } from './jquery/jquery.component';
 import { FrequentUsedjsComponent } from './frequent-usedjs/frequent-usedjs.component';
+import { FunctionComponent } from './function/function.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
       { path: '', component: JavascriptComponent },
       { path: 'javaScript:DOM', component: JavascriptComponent },
       { path: 'javaScript:FREQUENTLY', component: FrequentUsedjsComponent },
+      { path: 'javaScript:FUNCTIONS', component: FunctionComponent },
       { path: 'jQuery', component: JqueryComponent },
     ]
   }

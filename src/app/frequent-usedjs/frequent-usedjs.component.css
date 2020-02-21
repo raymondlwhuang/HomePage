@@ -1,10 +1,19 @@
 .main{
   padding: 0 10px;
 }
-#code-snip {
+p{
+  margin: 5px 0 0;
   padding: 5px;
-  border: solid 1px red;
+  background-color: lightgray;
+}
+#code-snip {
+  max-height: 40vh;
+  overflow: scroll;  
+  padding: 5px;
   margin: 5px 0;  
+}
+.add-border {
+  border: solid 1px red;
 }
 table {
     width: 100%;
@@ -16,6 +25,15 @@ table * {
 table th {
   background-color: lightgray;
 }
+.hide-log {
+  display: none;
+}
+.btn{
+  background: lightgray;
+  padding: 5px;
+  margin: 5px;
+}
+
 @media all and (max-width : 599px){
   .main{
     max-width: 300px;

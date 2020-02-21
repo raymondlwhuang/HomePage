@@ -17,6 +17,7 @@ import { JqueryComponent } from './jquery/jquery.component';
 //import { FrequentUsedjsComponent } from './frequent-usedjs/frequent-usedjs.component';
 import { FrequentUsedjsModule } from './frequent-usedjs/frequent-usedjs.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FunctionComponent } from './function/function.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SkillsDemoComponent,
     JavascriptComponent,
     JqueryComponent,
+    FunctionComponent,
     //FrequentUsedjsComponent
   ],
   imports: [
