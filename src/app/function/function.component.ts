@@ -52,9 +52,9 @@ export class FunctionComponent implements OnInit {
     let thisPromiseCount = ++this.promiseCount;
 
     let log = document.getElementById('output');
-    if(thisPromiseCount % 3 == 0) log.innerHTML = '';
-    if(wontDo) log.innerHTML += thisPromiseCount +') Don\'t want do my job(<small>Looking my task</small>)<br/>';
-    else log.innerHTML += thisPromiseCount +') Started doing my job(<small>Beging my task</small>)<br/>';
+    //if(thisPromiseCount % 3 == 0) log.innerHTML = '';
+    if(wontDo) log.innerHTML = thisPromiseCount +') Don\'t want do my job(<small>Looking my task</small>)<br/>';
+    else log.innerHTML = thisPromiseCount +') Started doing my job(<small>Beging my task</small>)<br/>';
       let promise1 = new Promise((resolve, reject) => {
         if(wontDo) return reject([thisPromiseCount,"I am tired"]);
         else {

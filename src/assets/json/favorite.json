@@ -58,7 +58,7 @@
 			"}",
 			"printFullName.call(name,'markham');"			
 		],
-		"output": ["Raymond Huangis living in markham"]
+		"output": ["Raymond Huang is living in markham"]
 	},
 	{ 
 		"name": "apply", 
@@ -73,7 +73,7 @@
 			"}",
 			"printFullName.apply(name,['Markham','Ontario']);"
 		],
-		"output": ["Raymond Huangis living in Markham, Ontario"]
+		"output": ["Raymond Huang is living in Markham, Ontario"]
 	}	
 ,
 	{ 
@@ -121,7 +121,7 @@
 			"let promiseCount = 0;",
 			"function MyDecision(wontDo) {",
 			"&nbsp;&nbsp;&nbsp;let thisPromiseCount = ++promiseCount;",
-			"&nbsp;&nbsp;&nbsp;let log = document.getElementById('log');",
+			"&nbsp;&nbsp;&nbsp;let log = document.getElementById('output');",
 			"&nbsp;&nbsp;&nbsp;if(wontDo) log.innerHTML += thisPromiseCount +') Do not want do my job(<small>Start looking at the task</small>)<br/>';",
 			"&nbsp;&nbsp;&nbsp;else log.innerHTML += thisPromiseCount +') Started doing my job(<small>Beging my task</small>)<br/>';",
 			"&nbsp;&nbsp;&nbsp;let promise1 = new Promise((resolve, reject) => {",
