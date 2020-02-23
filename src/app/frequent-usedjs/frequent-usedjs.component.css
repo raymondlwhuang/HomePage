@@ -35,7 +35,7 @@ table th {
 }
 
 @media all and (max-width : 599px){
-  .main{
+/*  .main{
     max-width: 300px;
-  }
+  }*/
 }

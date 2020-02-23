@@ -53,7 +53,7 @@
 			"&nbsp;&nbsp;&nbsp;lastname: 'Huang',",
 			"}",
 			"let printFullName =  function (city){",
-			"&nbsp;&nbsp;&nbsp;let output = this.firstname + ' '+ this.lastname + ' is living in '+ city;",
+			"&nbsp;&nbsp;&nbsp;let output = this.firstname + ' '+ this.lastname + '&nbsp;is living in '+ city;",
 			"&nbsp;&nbsp;&nbsp;document.getElementById('output').innerHTML = output;",
 			"}",
 			"printFullName.call(name,'markham');"			
@@ -64,7 +64,7 @@
 		"name": "apply", 
 		"snip": [
 			"let printFullName =  function (city,province){",
-			"&nbsp;&nbsp;&nbsp;let output = this.firstname + ' '+ this.lastname + ' is living in ' +city + ', '+ province;",
+			"&nbsp;&nbsp;&nbsp;let output = this.firstname + ' '+ this.lastname + '&nbsp;is living in ' +city + ', '+ province;",
 			"&nbsp;&nbsp;&nbsp;document.getElementById('output').innerHTML = output;",
 			"}",
 			"let name =  {",
@@ -80,7 +80,7 @@
 		"name": "bind", 
 		"snip": [
 			"let printFullName =  function (city,province){",
-			"&nbsp;&nbsp;&nbsp;let output = this.firstname + ' '+ this.lastname + ' is living in ' +city + ', '+ province;",
+			"&nbsp;&nbsp;&nbsp;let output = this.firstname + ' '+ this.lastname + '&nbsp;is living in ' +city + ', '+ province;",
 			"&nbsp;&nbsp;&nbsp;document.getElementById('output').innerHTML = output;",
 			"}",
 			"let name =  {",
@@ -96,7 +96,7 @@
 		"name": "polyfill for bind", 
 		"snip": [
 			"let printName =  function (city,province,country){",
-			"&nbsp;&nbsp;&nbsp;let output = this.firstname + ' '+ this.lastname +' is lived in ' + city + ', '+ province + ', '+ country;",
+			"&nbsp;&nbsp;&nbsp;let output = this.firstname + ' '+ this.lastname +'&nbsp;is lived in ' + city + ', '+ province + ', '+ country;",
 			"&nbsp;&nbsp;&nbsp;document.getElementById('output').innerHTML += output;",
 			"}",
 			"let name =  {",
@@ -122,18 +122,18 @@
 			"function MyDecision(wontDo) {",
 			"&nbsp;&nbsp;&nbsp;let thisPromiseCount = ++promiseCount;",
 			"&nbsp;&nbsp;&nbsp;let log = document.getElementById('output');",
-			"&nbsp;&nbsp;&nbsp;if(wontDo) log.innerHTML += thisPromiseCount +') Do not want do my job(<small>Start looking at the task</small>)<br/>';",
-			"&nbsp;&nbsp;&nbsp;else log.innerHTML += thisPromiseCount +') Started doing my job(<small>Beging my task</small>)<br/>';",
+			"&nbsp;&nbsp;&nbsp;if(wontDo) log.innerHTML += thisPromiseCount +') Do not want do my job(<small>Start looking at the task</small>)&lt;br/&gt;';",
+			"&nbsp;&nbsp;&nbsp;else log.innerHTML += thisPromiseCount +') Started doing my job(<small>Beging my task</small>)&lt;br/&gt;';",
 			"&nbsp;&nbsp;&nbsp;let promise1 = new Promise((resolve, reject) => {",
 			"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(wontDo) return reject([thisPromiseCount,'I am tired']);",
 			"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else {",
-			"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;log.innerHTML += thisPromiseCount +') Working as promised (<small>promise started</small>)<br/>';",
+			"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;log.innerHTML += thisPromiseCount +') Working as promised (<small>promise started</small>)&lt;br/&gt;';",
 			"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setTimeout(() =>resolve(thisPromiseCount), Math.random() * 2000 + 1000);",
 			"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}",
 			"&nbsp;&nbsp;&nbsp;}",
-			"&nbsp;&nbsp;&nbsp;).then((val) =>log.innerHTML += val +') My job is done (<small>promise fullfiled and ended</small>)<br/>')",
-			"&nbsp;&nbsp;&nbsp;.catch((reason) =>log.innerHTML += reason[0] +') Promise rejected resason: ' + reason[1]+'<br/>');",
-			"&nbsp;&nbsp;&nbsp;log.innerHTML += thisPromiseCount +') Promise ' + (wontDo ? 'rejected' : ' made') + '(<small>Sync code terminated</small>)<br/>';",
+			"&nbsp;&nbsp;&nbsp;).then((val) =>log.innerHTML += val +') My job is done (<small>promise fullfiled and ended</small>)&lt;br/&gt;')",
+			"&nbsp;&nbsp;&nbsp;.catch((reason) =>log.innerHTML += reason[0] +') Promise rejected resason: ' + reason[1]+'&lt;br/&gt;');",
+			"&nbsp;&nbsp;&nbsp;log.innerHTML += thisPromiseCount +') Promise ' + (wontDo ? 'rejected' : '&nbsp;made') + '(<small>Sync code terminated</small>)&lt;br/&gt;';",
 			"}"		
 		]
 	}	
