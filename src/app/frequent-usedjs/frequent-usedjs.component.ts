@@ -1,10 +1,10 @@
 import {ChangeDetectorRef, Component, OnInit, ViewChild,OnDestroy, DoCheck, ChangeDetectionStrategy, Input, OnChanges} from "@angular/core";
 import {MatPaginator} from '@angular/material/paginator';
 import {MatTableDataSource} from '@angular/material/table';
-import { EmployeeService } from '../employee.service';
+import { EmployeeService } from '../_services/employee.service';
 import { Employee } from '../employee';
 import { Favorite } from '../favorite';
-import { FavoriteService } from '../favorite.service';
+import { FavoriteService } from '../_services/favorite.service';
 import * as _ from 'lodash';
 
 @Component({

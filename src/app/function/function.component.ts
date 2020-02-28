@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Favorite } from '../favorite';
-import { FavoriteService } from '../favorite.service';
+import { FavoriteService } from '../_services/favorite.service';
 
 @Component({
   selector: 'app-function',

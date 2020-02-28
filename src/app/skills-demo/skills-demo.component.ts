@@ -17,10 +17,9 @@ export class SkillsDemoComponent implements OnInit {
       $('#javaScript').hover(
         function() {
           if(outerWidth>599)
-            $('#javaScript .submenu').toggle();
+            $('#javaScript .submenu').show();
         }, function() {
-          if(outerWidth>599)
-            $('#javaScript .submenu').toggle();
+            $('#javaScript .submenu').hide();
         }
       );      
     });    

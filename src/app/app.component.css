@@ -38,10 +38,10 @@ nav li a:hover{
 .router-container {
     margin-top: 50px;
 }
+.hide {
+    display: none;
+}
 @media all and (max-width: 599px){
-    /* .nav-container{
-        max-width: 300px;
-    }     */
     nav ul {
         justify-content: flex-start;
     }    

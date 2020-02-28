@@ -51,7 +51,7 @@ import {MatTreeModule} from '@angular/material/tree';
 
 import { CommonModule } from '@angular/common';
 import { FrequentUsedjsComponent } from './frequent-usedjs.component';
-import { FavoriteService } from '../favorite.service';
+import { FavoriteService } from '../_services/favorite.service';
 import { DemoOutputComponent } from './demo-output.component';
 
 

@@ -1,10 +1,14 @@
 <div class="nav-container">
     <nav>
         <ul>
-            <li><a routerLink="">HOME</a></li>
-            <li><a routerLink="/portfolio">PORTFOLIO</a></li>
-            <li><a routerLink="/others">OTHERS</a></li>
-            <li><a routerLink="/skills-demo">DEMO</a></li>
+            <li><a routerLink="" routerLinkActive="active">HOME</a></li>
+            <li><a routerLink="/portfolio" routerLinkActive="active">PORTFOLIO</a></li>
+            <li><a routerLink="/others" routerLinkActive="active">OTHERS</a></li>
+            <li><a routerLink="/skills-demo" routerLinkActive="active">DEMO</a></li>
+            <li *ngIf="!(isLoggedIn | async)"><a routerLink="/login" routerLinkActive="active">PRIVATE</a></li>
+            <li *ngIf="(isLoggedIn | async)">
+                <a id="logout" (click)="logout()">LOGOUT</a>
+              </li>
             <li class="source"><a href="https://github.com/raymondlwhuang/HomePage" target="_blank">Source</a></li>
         </ul>
     </nav>

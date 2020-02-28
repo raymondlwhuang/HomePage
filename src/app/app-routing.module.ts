@@ -8,12 +8,17 @@ import { JavascriptComponent } from './javascript/javascript.component';
 import { JqueryComponent } from './jquery/jquery.component';
 import { FrequentUsedjsComponent } from './frequent-usedjs/frequent-usedjs.component';
 import { FunctionComponent } from './function/function.component';
+import { CssComponent } from './css/css.component';
+import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './_helpers/auth.guard';
 
 
 const routes: Routes = [
   { path: '', component: EmploymentComponent},
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'others', component: EducationComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'CSS', component: CssComponent },
   { 
     path: 'skills-demo', 
     component: SkillsDemoComponent,
@@ -23,8 +28,12 @@ const routes: Routes = [
       { path: 'javaScript:FREQUENTLY', component: FrequentUsedjsComponent },
       { path: 'javaScript:FUNCTIONS', component: FunctionComponent },
       { path: 'jQuery', component: JqueryComponent },
+      { path: 'CSS', component: CssComponent, canActivate: [AuthGuard] },
     ]
-  }
+  },
+    // otherwise redirect to home
+    { path: '**', redirectTo: '' }
+
 ];
 
 @NgModule({
