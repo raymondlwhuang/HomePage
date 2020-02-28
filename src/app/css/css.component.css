@@ -1,0 +1,28 @@
+.main {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+textarea,.show-case {
+    min-width: 300px;
+    padding: 5px;
+    margin: 10px;
+    border: solid 1px lightgrey;
+    flex: 1 1 0px;    
+}
+::ng-deep p{
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+button {
+    padding: 5px;
+    margin: 5px;
+    background: lightgray;    
+}
+@media all and (max-width: 599px){
+    textarea,.show-case {
+        width: 100%;
+    }
+}
